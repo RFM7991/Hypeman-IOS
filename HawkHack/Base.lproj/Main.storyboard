@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HawkHack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oV8-Xy-KYB" userLabel="YouTube Player View" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="575" width="375" height="203"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBs-KA-BKR">
+                                <rect key="frame" x="124.66666666666669" y="133.66666666666666" width="126" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="PreviewButton">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTO-f7-hmQ" userLabel="Bottom Button" customClass="RoundButton" customModule="HawkHack" customModuleProvider="target">
+                                <rect key="frame" x="125.66666666666669" y="428" width="124" height="65"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.12156862745098039" blue="0.77647058823529413" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Bottom">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressBottom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taZ-yy-avv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pY-dV-JBV" customClass="RoundButton" customModule="HawkHack" customModuleProvider="target">
+                                <rect key="frame" x="150" y="316.66666666666669" width="75" height="65"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.12156862745098039" blue="0.77647058823529413" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="More">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressMore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H5V-Xh-uy4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5e-Tk-oHZ" userLabel="Left Button" customClass="RoundButton" customModule="HawkHack" customModuleProvider="target">
+                                <rect key="frame" x="11.666666666666671" y="316.66666666666669" width="124.00000000000001" height="65"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.12156862745098039" blue="0.77647058823529413" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWI-Jp-CYi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUY-a5-Yem" userLabel="Right Button" customClass="RoundButton" customModule="HawkHack" customModuleProvider="target">
+                                <rect key="frame" x="244.66666666666663" y="316.66666666666669" width="124" height="65"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.12156862745098039" blue="0.77647058823529413" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7K-Eu-CRT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjU-DZ-HDI" userLabel="Root Button" customClass="RoundButton" customModule="HawkHack" customModuleProvider="target">
+                                <rect key="frame" x="125.66666666666669" y="203.66666666666666" width="124" height="64.999999999999972"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.12156862745098039" blue="0.77647058823529413" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Roots">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressRoots:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uyw-rs-3yU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58472881345202743" green="0.62554735556833529" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1pY-dV-JBV" firstAttribute="leading" secondItem="g5e-Tk-oHZ" secondAttribute="trailing" multiplier="1.05" constant="8" symbolic="YES" id="00L-Fb-Osb"/>
+                            <constraint firstItem="g5e-Tk-oHZ" firstAttribute="centerY" secondItem="1pY-dV-JBV" secondAttribute="centerY" id="2ER-8X-fb1"/>
+                            <constraint firstItem="1pY-dV-JBV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="2p5-BY-jvY"/>
+                            <constraint firstItem="SjU-DZ-HDI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="6lC-Jg-GpU"/>
+                            <constraint firstItem="tBs-KA-BKR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DoY-gD-9U9"/>
+                            <constraint firstItem="sUY-a5-Yem" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="EdQ-fc-MBW"/>
+                            <constraint firstItem="sUY-a5-Yem" firstAttribute="leading" secondItem="1pY-dV-JBV" secondAttribute="trailing" multiplier="1.05" constant="8" symbolic="YES" id="Fid-Qu-xkD"/>
+                            <constraint firstItem="YTO-f7-hmQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="IaY-KR-Iqg"/>
+                            <constraint firstItem="sUY-a5-Yem" firstAttribute="centerY" secondItem="1pY-dV-JBV" secondAttribute="centerY" id="KPT-ra-x7Q"/>
+                            <constraint firstItem="sUY-a5-Yem" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="Kco-au-u6y"/>
+                            <constraint firstItem="SjU-DZ-HDI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="LnK-ow-PAH"/>
+                            <constraint firstItem="g5e-Tk-oHZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="QNB-eU-4Tn"/>
+                            <constraint firstItem="1pY-dV-JBV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SZ5-0e-Iby"/>
+                            <constraint firstItem="g5e-Tk-oHZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="ZrW-IX-Nir"/>
+                            <constraint firstItem="YTO-f7-hmQ" firstAttribute="centerX" secondItem="1pY-dV-JBV" secondAttribute="centerX" id="bLV-vH-A2o"/>
+                            <constraint firstItem="oV8-Xy-KYB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="e0a-Vh-ye9"/>
+                            <constraint firstItem="oV8-Xy-KYB" firstAttribute="top" secondItem="YTO-f7-hmQ" secondAttribute="bottom" multiplier="1.15" constant="8" symbolic="YES" id="e43-uq-yo5"/>
+                            <constraint firstItem="YTO-f7-hmQ" firstAttribute="top" secondItem="1pY-dV-JBV" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="f6A-Z1-sh6"/>
+                            <constraint firstItem="YTO-f7-hmQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="iLZ-jd-ZM0"/>
+                            <constraint firstItem="1pY-dV-JBV" firstAttribute="top" secondItem="SjU-DZ-HDI" secondAttribute="bottom" multiplier="1.15" constant="8" symbolic="YES" id="jt7-Xf-02g"/>
+                            <constraint firstItem="SjU-DZ-HDI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mu1-0V-MVe"/>
+                            <constraint firstItem="1pY-dV-JBV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="nY8-Mz-9Wn"/>
+                            <constraint firstItem="SjU-DZ-HDI" firstAttribute="top" secondItem="tBs-KA-BKR" secondAttribute="bottom" multiplier="1.15" constant="8" symbolic="YES" id="oRr-08-UrD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oV8-Xy-KYB" secondAttribute="bottom" id="sDk-ym-pZ9"/>
+                            <constraint firstItem="oV8-Xy-KYB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="yom-om-6Xn"/>
+                            <constraint firstItem="YTO-f7-hmQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zXT-Nc-oIX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="8bC-Xf-vdC" id="fN5-2A-zzB"/>
+                        <outlet property="bottom_button" destination="YTO-f7-hmQ" id="HBq-fk-Qr2"/>
+                        <outlet property="left_button" destination="g5e-Tk-oHZ" id="dq8-6X-gbZ"/>
+                        <outlet property="more_button" destination="1pY-dV-JBV" id="Jx5-4W-Sbe"/>
+                        <outlet property="preview_button" destination="tBs-KA-BKR" id="3Rr-sS-P1P"/>
+                        <outlet property="right_button" destination="sUY-a5-Yem" id="4g3-z6-S9T"/>
+                        <outlet property="root_button" destination="SjU-DZ-HDI" id="Yzm-1q-Hhr"/>
+                        <outlet property="youtubePlayer" destination="oV8-Xy-KYB" id="UF3-ba-p4J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130.40000000000001" y="-64.285714285714292"/>
+        </scene>
+    </scenes>
+</document>
